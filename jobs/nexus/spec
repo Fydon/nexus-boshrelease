@@ -1,0 +1,38 @@
+---
+name: nexus
+
+description: Runs Nexus Repository Manager
+
+packages:
+- java
+- nexus
+properties:
+  nexus.maximum_heap_size:
+    description: Maximum Java heap size. This is passed as `-Xmx` to Java.
+    default: 1200M
+
+  nexus.minimum_heap_size:
+    description: Initial and minimum Java heap size. This is passed as `-Xms` to Java.
+    default: 1200M
+
+  nexus.ssl_cert:
+    description: Certificate to use for HTTPS
+    default: ''
+
+  nexus.ssl_private_key:
+    description: Private key for certificate to use for HTTPS
+    default: ''
+
+templates:
+  bin/ctl.sh: bin/ctl.sh
+  bin/monit_debugger.sh: bin/monit_debugger.sh
+  bin/nexus.rc.erb: bin/nexus.rc
+  bin/nexus.vmoptions.erb: bin/nexus.vmoptions
+  bin/cert.crt.erb: bin/cert.crt
+  bin/cert.pem.erb: bin/cert.pem
+  data/properties.sh.erb: data/properties.sh
+  etc/karaf/custom.properties.erb: etc/karaf/custom.properties
+  etc/logback/logback-access.xml.erb: etc/logback/logback-access.xml
+  etc/logback/logback.xml.erb: etc/logback/logback.xml
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh

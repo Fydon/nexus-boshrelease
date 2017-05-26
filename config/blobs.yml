@@ -1,0 +1,6 @@
+java\jdk-8u121-linux-x64.tar.gz:
+  size: 183246769
+  sha: 11f5925366234506730c095a2fd151d8f1212db7
+nexus\nexus-3.2.1-01-unix.tar.gz:
+  size: 97022711
+  sha: 3aa5a12beba9b0c35d7cea1d774a2117398f5c5b

@@ -1,0 +1,7 @@
+---
+name: java
+
+dependencies: []
+
+files:
+- java\jdk-8u121-linux-x64.tar.gz # http://download.oracle.com/otn-pub/java/jdk/8u121-b13/server-jre-8u121-linux-x64.tar.gz

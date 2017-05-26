@@ -1,0 +1,15 @@
+-Xms<%= p("nexus.minimum_heap_size") %>
+-Xmx<%= p("nexus.maximum_heap_size") %>
+-XX:MaxDirectMemorySize=2G
+-XX:+UnlockDiagnosticVMOptions
+-XX:+UnsyncloadClass
+-XX:+LogVMOutput
+-XX:LogFile=/var/vcap/sys/log/nexus/jvm.log
+-Djava.net.preferIPv4Stack=true
+-Dkaraf.home=/var/vcap/jobs/nexus/packages/nexus
+-Dkaraf.base=/var/vcap/jobs/nexus/packages/nexus
+-Dkaraf.etc=/var/vcap/jobs/nexus/packages/nexus/etc/karaf
+-Djava.util.logging.config.file=/var/vcap/jobs/nexus/packages/nexus/etc/karaf/java.util.logging.properties
+-Dkaraf.data=/var/vcap/store/nexus
+-Djava.io.tmpdir=/var/vcap/sys/tmp/nexus
+-Dkaraf.startLocalConsole=false
